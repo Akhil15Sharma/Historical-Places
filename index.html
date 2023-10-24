@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+
+
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="56" fill="currentColor"
+                        class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" />
+                    </svg>
+                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="https://icons8.com/icon/7698/binoculars"></use></svg>  -->
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search destinations..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Sign In
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form>
+                                        <div class=" text-dark mb-3 ">
+                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                          <input type="email" class="form-control " id="name@example.com" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text-dark">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <div class=" text-dark mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                                          <input type="password" class="form-control  text-dark" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGFqJTIwbWFoYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="..." height="650px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Historical Places in India</h1>
+                        <h3>Taj Mahal , symbol of love.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?b=1&s=170667a&w=0&k=20&c=e4mD48ZKSpMUv1hTZ7Ut-CjlKymZ6eoy3Wjnv_I9wPA="
+                        class="d-block w-100" alt="..." height="650px">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h1>Historical Places in India</h1>
+                        <h3>Mathura Valley, place of worship.</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1334740333/photo/gwalior-fort-or-gwalior-qila-india.jpg?b=1&s=170667a&w=0&k=20&c=iodlW7P_Dy2Cug9eYokDB6yeLBp1rwRLyf9zz_eoKZQ="
+                        class="d-block w-100" alt="..." height="650px">
+                    <div class="carousel-caption d-none d-md-block  text-white">
+                        <h1>Historical Places in India</h1>
+                        <h3>Udaipur Fort, evidence of bravery.</h3>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card1">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">1. Qutub Minar, Delhi <span
+                            class="text-muted">.</span>
+                    </h2>
+                    <p class="lead">Regarded as the site of the first Muslim kingdom in northern India, the Qutub Minar
+                        is
+                        definitely one of the most historical sites in India. It is one of the finest examples of
+                        Indo-Muslim architecture with its intricate red sandstone storeys. These are dotted with
+                        carvings
+                        and verses from the Quran and are mostly in Arabic and Nagari. Qutub Minar is one of the famous
+                        historical places in India and is said to have got its name from Qutb-ud-din Aibak who was the
+                        first
+                        Muslim ruler of North India. The first mosque in India Quwwat-ul-Islam Masjid is also located at
+                        the
+                        foot of the Qutub Minar.</p>
+
+                    <h4> Interesting fact: The Qutub Minar complex has an iron pillar that has not rusted even after
+                        2000
+                        years.</h4>
+                    <h5>Entry fee: Indians- INR 10</h5>
+                    <h5>Foreigners- INR 250.</h5>
+                    <h5> Open from: 7 am to 5 pm.</h5>
+                    <h5> Must see: The Decorative Light Show held every evening from 6:30 to 8 pm and the Qutub Minar
+                        Festival that is held in October/November.</h5>
+                    <h5>Built By: Qitub-ud-Din Aibak</h5>
+                    <h5> Built In: 1193</h5>
+
+                </div>
+                <div class="col-md-5">
+                    <img src="https://media.istockphoto.com/id/609055236/photo/qutub-minar.jpg?b=1&s=170667a&w=0&k=20&c=5Sc-SyNRCDly2mw3WWZGyO_xRZF83r36kYmH2v2Z_aA="
+                        alt="" width="620px" height="600px">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card2">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">2. Red Fort, Delhi <span class="text-muted"></span>
+                    </h2>
+                    <p class="lead">One of the historical tourist places in India, the Red Fort was constructed over ten
+                        years from 1638 to 1648. This fort was constructed when Shah Jahan shifted the capital from Agra
+                        to
+                        Delhi and it was then known as the Qila-e-Mubarak. This octagonal fort is one of the most famous
+                        historical places in north India and is also the site where the President gives his speech on
+                        Independence Day. The Red fort is truly remarkable and one of the best historical places in
+                        India.
+                    </p>
+
+                    <h4> Interesting fact: The Red fort was actually white as it was made of limestone. The British
+                        painted
+                        it red when the limestone started chipping off.</h4>
+                    <h5>Entry fee: Indians- INR 10.</h5>
+                    <h5>Foreigners- INR 250.</h5>
+                    <h5> Built By: Shah Jahan.</h5>
+                    <h5>Open from: 9:30 am to 4:30 pm daily (Closed on Mondays).</h5>
+                    <h5> Must see: The Palace of Colors or the ‘Rang Mahal’ where the emperor’s wives, mistresses and
+                        maids resided.</h5>
+                    <h5> Built In: 1639.</h5>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="https://media.istockphoto.com/id/501905872/photo/red-fort-delhi-india.jpg?b=1&s=170667a&w=0&k=20&c=MBfHFFXR84_j5_WIoSedghK_MkLRlsRJUrSsrbncDTM="
+                        alt="" width="500px" height="600px">
+                </div>
+            </div>
+        </div>
+
+        <div class="card3">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">3.Hawa Mahal, Jaipur <span class="text-muted"></span>
+                    </h2>
+                    <p class="lead">The royal city of Fatehpur Sikri was once the capital of the Mughal era during
+                        Akbar’s
+                        reign. This royal city is one of the historical tourist places in India and once had palaces,
+                        public
+                        buildings, mosques, quarters for the king, the army as well as the servants. Further, the well
+                        planned royal city with carved columns and decorated pillars was built between 1571-1573 AD and
+                        abandoned due to a shortage of water..</p>
+
+                    <h4> Interesting fact: Many barren women would come to the tomb of the Sufi saint Salim Chisti to
+                        pray
+                        for children.</h4>
+                    <h5> Entry fee: Indians- INR 40.</h5>
+                    <h5> Foreigners- INR 510.</h5>
+                    <h5> Open from: 6 am to 6 pm (Closed on Fridays).</h5>
+                    <h5> Must see: Diwan-i-Aam and the Diwan-i-Khas.</h5>
+                    <h5>Built By: Akbar.</h5>
+                    <h5> Built In: 1569.</h5>
+
+                </div>
+                <div class="col-md-5">
+                    <img src="https://media.istockphoto.com/id/183370129/photo/jaipur-hawa-mahal-india.jpg?b=1&s=170667a&w=0&k=20&c=UBRk4IxIMbbfNjc5s5HsZFg_SxrOzTcfWtBeA276rnY="
+                        alt="" height="500px" width="600px">
+                </div>
+            </div>
+        </div>
+        <div class="card4">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">4. Rani ki Vav, Gujarat <span
+                            class="text-muted">.</span>
+                    </h2>
+                    <p class="lead">You will feel like an ant climbing down an anthill when you explore the Rani ki Vav
+                        stepwell as it is a massive structure that is around 24 meters deep. One of the most unexplored
+                        historical places in India, this stepwell was built in the 11th century AD, as a memoriam for
+                        King Bhimdev of the Solanki dynasty by his wife Queen Udayamati. The lowest level of the
+                        stepwell was earlier used as a route to escape to neighbouring villages. It is one of the most
+                        beautiful places to visit in Gujarat. </p>
+
+                    <h4>Interesting fact: The central level has the theme “Dasavatars” which means 10 incarnations of
+                        Vishnu, and that when you approach the water level there will be a sculpture of Vishnu reclining
+                        on a thousand snake heads.</h4>
+                    <h5> Entry fee: Indians- INR 5.</h5>
+                    <h5> Foreigners- INR 135.</h5>
+                    <h5> Open from: 8 am to 6 pm.</h5>
+                    <h5> Must see: The excellently carved sculptures of Yokinis, Apsaras and Nakakanyas in the seven
+                        galleries.</h5>
+                    <h5> Built By: Udayamati.</h5>
+                    <h5> Built In: 11th century AD .</h5>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="https://media.istockphoto.com/id/1408715174/photo/rani-ki-vav-stepwell-in-gujarat-india-a-unesco-world-heritage-site.jpg?b=1&s=170667a&w=0&k=20&c=cGDl3V2GZtrGoWJzR1qGxlOS6odztuXeN0m95bqpNBI="
+                        alt="" height="600px" width="500px">
+                </div>
+            </div>
+        </div>
+
+        <div class="card5">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">5. Victoria Memorial, Kolkata <span
+                            class="text-muted"></span>
+                    </h2>
+                    <p class="lead">The Victoria Memorial in Kolkata is one of the most historical tourist places in
+                        India and was built during the peak of the British era in India. The then Viceroy Lord Curzon
+                        laid down the idea of this monument but its actual design was done by Sir William Emerson.
+
+                        Multitudes of lush gardens, a museum filled with British memorabilia including weapons,
+                        paintings, sculptures, artifacts etc and royal portrait of the Queen are what you will find in
+                        this beautiful monument. One of the best paintings you will find here is the one by Russian
+                        artist Vasili Verestchagin. This painting depicts the Prince of Wales in Jaipur in 1876.</p>
+
+                    <h4> Interesting fact: There are two sets of mysterious inscriptions on the monument. One is “VRI”
+                        which means Victoria Regina Imperatrix and the other is “Dieu Et Mon Droit”. The first means
+                        Victoria Queen and Empress and the latter means “God and my right”.</h4>
+                    <h5> Entry fee: Indians- INR 20.</h5>
+                    <h5> Foreigners- INR 200.</h5>
+                    <h5> Open from: 5:30 am to 6:15 pm daily.</h5>
+                    <h5> Must see: The black bronze statue “Angel of Victory” that lies on the apex of the memorial’s
+                        dome. In favorable weather, it also acts as a weathercock.</h5>
+                    <h5> Built By: Lord Curzon.</h5>
+                    <h5> Built In: 1921.</h5>
+
+                </div>
+                <div class="col-md-5">
+                    <img src="https://media.istockphoto.com/id/1164616564/photo/victoria-memorial-ancient-white-marble-monument-at-kolkata-at-sunset.jpg?b=1&s=170667a&w=0&k=20&c=BGtdM6sf1uxjzFVbzril1vLOxuh8lg1XDEHexba9hUs="
+                        alt="" height="625px" width="600px">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="footer">
+        <main class="flex-shrink-0">
+            <div class="container">
+                <h3 class="mt-5"> @Designed and developed by Akhil Sharma.</h3>
+                <!-- <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+              <p>Use <a href="/docs/5.3/examples/sticky-footer-navbar/">the sticky footer with a fixed navbar</a> if need be, too.</p> -->
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
